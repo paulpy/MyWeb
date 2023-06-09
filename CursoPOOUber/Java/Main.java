@@ -1,14 +1,10 @@
 class Main{
     public static void main(String[] args) {
         System.out.println("Inicia el codigo");
-        Car car = new Car();
-        car.license = "AMQ123";
-        car.driver = "Andres Herrera";
+        Car car = new Car("AMQ123",new Account("Andres Herrera","1223RRT"));
         car.passenger = 4;
         car.printDataCar();
-        Car car2 = new Car();
-        car2.license = "QGH726";
-        car2.driver = "Andra Herrera";
+        Car car2 = new Car("QGH726", new Account("Andrea Herrera", "33412GTS"));
         car2.passenger = 3;
         car2.printDataCar();
     }
